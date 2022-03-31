@@ -1,0 +1,4 @@
+host: go-stock-db
+username: root
+password: root
+database: mydb

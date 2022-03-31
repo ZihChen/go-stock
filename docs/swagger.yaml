@@ -1,0 +1,24 @@
+info:
+  contact: {}
+  title: Go-Stock swagger
+paths:
+  /api/stock/list:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      security:
+      - BearerAuth: []
+      summary: 讀取Stock
+      tags:
+      - Stock
+securityDefinitions:
+  BearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
